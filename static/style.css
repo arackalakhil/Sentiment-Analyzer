@@ -1,0 +1,115 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e2e8f0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+/* Form styles */
+.review-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e0;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.review-form textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 10px rgba(49, 130, 206, 0.2);
+}
+
+.review-form button {
+    background: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.review-form button:hover {
+    background: #2b6cb0;
+}
+
+/* Result card */
+.result-card {
+    background: #f7fafc;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.result-card h2 {
+    margin: 10px 0 5px 0;
+    color: #2d3748;
+}
+
+.result-card p {
+    font-size: 16px;
+    margin: 5px 0 15px 0;
+}
+
+.result-card p.good {
+    color: #38a169;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.result-card p.bad {
+    color: #e53e3e;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 650px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .review-form textarea {
+        height: 100px;
+    }
+}

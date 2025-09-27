@@ -1,0 +1,39 @@
+# ----------------- Python -----------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# ----------------- Virtual Environment -----------------
+venv/
+env/
+.venv/
+
+# ----------------- IDE / Editor -----------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------- System Files -----------------
+.DS_Store
+Thumbs.db
+
+# ----------------- Jupyter -----------------
+.ipynb_checkpoints/
+
+# ----------------- Logs -----------------
+*.log
+
+# ----------------- Model / Data Files -----------------
+# Large ML model files, datasets
+*.pkl
+*.joblib
+*.h5
+*.csv
+*.bz2
+
+# ----------------- Environment / Secrets -----------------
+.env
+config.py
